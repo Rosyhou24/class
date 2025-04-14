@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chili's mobile page | R Hourquebie | 2025</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://use.typekit.net/eoa8eoi.css">
+<style>
+body {
+    font-family: "quatro-slab", serif;
+    font-weight: 900;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+    color: #000;
+}
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header, main, footer {
+    padding: 10px;
+    text-align: center;
+}
+nav {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    padding: 15px 10px;
+    margin-top: 20px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #c21807;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #fddddd;
+    color: #a01006;
+}
+nav ul li a:focus {
+    outline: 2px solid #c21807;
+    background-color: #fddddd;
+    color: #a01006;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+.menu-item {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 580px;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+button {
+    background-color: #c21807;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: #a01006;
+}
+button:focus {
+    outline: 2px solid #fff;
+    box-shadow: 0 0 0 3px #a01006;
+}
+footer {
+    background-color: #c21807;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+}
+.hero-section {
+    background-color: #c21807;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.label-top {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    color: #c21807;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    font-size: 14px;
+    z-index: 10;
+}
+.hero-section button {
+    background-color: #fff;
+    color: #c21807;
+    font-weight: bold;
+	padding: 12px 24px;
+	border-radius: 8px;
+	font-size: 18px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+	margin-top: 10px;
+}
+.hero-section button:hover {
+    background-color: #fddddd;
+}
+.logo-img {
+    max-width: 250px;
+    display: block;
+    margin: 0 auto 10px;
+}
+h2 {
+    font-size: 26px;
+    color: #c21807;
+    margin-bottom: 40px;
+}
+#menu, #specials, #contact {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.01);
+    margin-top: 20px;
+}
+.menu-link-button {
+    display: inline-block;
+    background-color: #c21807;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.menu-link-button:hover {
+    background-color: #a01006;
+}
+.menu-item img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.menu-item p {
+    min-height: 60px;
+}
+.menu-item img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 1000px) {
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.info-sections section {
+    width: 48%;
+}
+#specials, #contact {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+#specials:hover, #contact:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    background-color: #fff4f4;
+    border: 1px solid #c21807;
+}
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+  <header> <img src="chili-s-grill-bar-logo.png" alt="chili's logo" class="logo-img"> </header>
+  <section class="hero-section">
+    <div class="label-top">Top</div>
+    <img src="hamburger background.svg" alt="Close-up of Chili's Big Smasher Burger with lettuce, tomato, and cheese">
+
+    
+    
+    <button>Order Now</button>
+  </section>
+  <nav>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#specials">Specials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main id="menu">
+    <h2>Chili's Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Fajita Trio</h3>
+        <img src="fajita trio.avif" alt="Fajita Trio">
+        <p>Sizzling Fajitas with all your favorite toppings. Add 250 calories.</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <h3>Mix & Match Fajitas</h3>
+        <img src="mix-match-fajitas.avif" alt="Mix & Match Fajitas">
+        <p>Customize your fajita combo just the way you like it!</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <h3>Shrimp Fajitas</h3>
+        <img src="Shrimp Fajitas.avif" alt="Shrimp Fajitas">
+        <p>Sizzlin' shrimp fajitas with all your favorite toppings.</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <h3>Santa Fe Salad</h3>
+        <img src="Santa Fe salad.avif" alt="Santa Fe Salad">
+        <p>Grilled chicken pico de gallo, guacamole, cilantro, tortilla strips, house-made ranch & a drizzle of Santa Fe sauce.</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <h3>Bacon Rancher Burger</h3>
+        <img src="Bacon Rancher Burger.avif" alt="Bacon Rancher Burger">
+        <p>Two beef patties, six slices of bacon, house-made ranch, American cheese, sautéed onions, pickles.</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <h3>Chocolate Molten Cake</h3>
+        <img src="Molten Chocolate Cake.avif" alt="Chocolate Molten Cake">
+        <p>Warm chocolate cake with a molten chocolate center, topped with vanilla ice cream in a chocolate shell with caramel drizzle.</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+    <a href="https://www.chilis.com/menu" target="_blank" class="menu-link-button">View Official Chili's Menu</a> </main>
+  <div class="info-sections">
+    <section id="specials">
+      <h2>Special Offers</h2>
+      <p>Enjoy our new combos and limited-time items!</p>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Visit our locations or order online from your mobile.</p>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025, Rosana Hourquebie. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental.</p>
+  </footer>
+</div>
+</body>
+</html>
